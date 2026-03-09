@@ -31,23 +31,27 @@
 <section>
     <h2>Reservas Aquí</h2>
     
-    <form action="#">
+    <form action="#" method="POST">
+
         <div>
-            <label for="client-name">Nombre:</label>
-            <input type="text" id="client-name" name="name" placeholder="Tu nombre completo">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre completo">
         </div>
 
         <div>
-            <label for="meal-type">Tipo de reserva:</label>
-            <select id="meal-type" name="meal">
-                <option value="snack">Snack</option>
-                <option value="breakfast">Breakfast</option>
-            </select>
+            <p>Tipo de reserva:</p>
+            <label for="snack">
+            <input type="checkbox" id="snack" name="meal" value="snack">Snack</label>
+
+            <label for="breakfast">
+            <input type="checkbox" id="breakfast" name="meal" value="breakfast">Breakfast</label> 
         </div>
 
+        <br>
+
         <div>
-            <label for="people-count">Personas:</label>
-            <select id="people-count" name="people">
+            <label for="people">Personas:</label>
+            <select id="people" name="people">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -65,6 +69,25 @@
 
     <footer>
         <p>From the oven with love</p>
+        <a href="mailto:info@breakfast.com">Contact Us</a>
+
+        <section class="horario">
+
+        <h4>Horario de Apertura</h4>
+        <ul>
+        <li>
+            <strong>L-V</strong> de <time datetime="08:00">8:00</time> a <time datetime="17:00">17:00</time>
+        </li>
+        <li>
+            <strong>S</strong> de <time datetime="10:00">10:00</time> a <time datetime="17:00">17:00</time>
+        </li>
+        <li>
+            <strong>Domingos y Festivos</strong> 
+            <span>Cerrado</span>
+        </li>
+        </ul>
+        </section>
+
     </footer>
 
 </body>
